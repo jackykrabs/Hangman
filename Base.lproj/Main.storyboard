@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="35H-EV-qB7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="1Yy-OD-HNV">
+            <objects>
+                <navigationController id="35H-EV-qB7" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="N5P-ey-mWc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="D3e-1a-uTR" kind="relationship" relationship="rootViewController" id="xR3-Ye-ILz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qrz-yQ-W45" userLabel="Instructions" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1434" y="-9"/>
+        </scene>
+        <!--Instructions-->
+        <scene sceneID="YVD-VA-uvJ">
+            <objects>
+                <viewController title="Instructions" id="k9c-cb-ejx" customClass="ShowDirectionsViewController" customModule="Hangman" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ss4-Il-QvK"/>
+                        <viewControllerLayoutGuide type="bottom" id="zJY-0n-DB1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T6N-tn-Q7E" customClass="ShowDirections" customModule="Hangman" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="showDirectionsView" destination="T6N-tn-Q7E" id="ycc-uL-9Tt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dzk-3r-xbg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="415" y="-761"/>
+        </scene>
+        <!--Main Menu-->
+        <scene sceneID="GWz-ce-uPI">
+            <objects>
+                <viewController id="D3e-1a-uTR" customClass="MainMenuViewController" customModule="Hangman" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OWb-Nm-8Qa"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yj1-SB-PVx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gtm-CO-pVy" customClass="MainMenu" customModule="Hangman" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Main Menu" id="QLC-Q1-9cE" userLabel="Main Menu"/>
+                    <connections>
+                        <outlet property="mainMenuView" destination="Gtm-CO-pVy" id="8d8-tn-Yqu"/>
+                        <segue destination="PIB-gK-Zf1" kind="show" identifier="showSelectScreen" id="f5O-qz-Vd8"/>
+                        <segue destination="k9c-cb-ejx" kind="show" identifier="showInstructionsSegue" id="1lV-iI-jiG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DWv-i6-h9c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-359" y="-9"/>
+        </scene>
+        <!--Select Category-->
+        <scene sceneID="K6d-WF-2hi">
+            <objects>
+                <viewController title="Select Category" id="PIB-gK-Zf1" customClass="SelectCategoryViewController" customModule="Hangman" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kIb-I5-K4j"/>
+                        <viewControllerLayoutGuide type="bottom" id="AiP-bk-Id9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dh2-P7-Vex" customClass="SelectCategory" customModule="Hangman" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="selectCategoryView" destination="Dh2-P7-Vex" id="lnD-K9-sI2"/>
+                        <segue destination="LE2-v5-sSr" kind="show" identifier="showGame" id="lGw-yG-N0k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fFN-7G-Ff5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="607" y="-9"/>
+        </scene>
+        <!--Game-->
+        <scene sceneID="LG2-4d-hYe">
+            <objects>
+                <viewController title="Game" id="LE2-v5-sSr" customClass="HangmanGameViewController" customModule="Hangman" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yyd-bB-Dxg"/>
+                        <viewControllerLayoutGuide type="bottom" id="6pU-QS-GN4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hq2-sL-JYF" customClass="HangmanGame" customModule="Hangman" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="hangmanGameView" destination="Hq2-sL-JYF" id="hqQ-CO-5uz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cxr-Rq-fJ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1423" y="-12"/>
+        </scene>
+    </scenes>
+</document>

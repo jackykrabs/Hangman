@@ -1,0 +1,115 @@
+{
+    "dataTitle" : "Hangman Phrases",
+    "swiftVersion" : "3.0.2",
+    
+    "phrases": [
+        {
+                "category" : "Sports",
+                "word" : "BOSTON CELTICS"
+        },
+        {
+                "category" : "Sports",
+                "word" : "TOM BRADY"
+        },
+        {
+                "category" : "Movies",
+                "word" : "AMERICAN PIE"
+        },
+        {
+                "category" : "Movies",
+                "word" : "THE LION KING"
+        },
+        {
+                "category" : "Movies",
+                "word" : "SUPERBAD"
+        },
+        {
+                "category" : "Movies",
+                "word" : "FORREST GUMP"
+        },
+        {
+                "category" : "Movies",
+                "word" : "RUDY"
+        },
+        {
+                "category" : "Movies",
+                "word" : "HARRY POTTER"
+        },
+        {
+                "category" : "Sports",
+                "word" : "MICHAEL PHELPS"
+        },
+        {
+                "category" : "Sports",
+                "word" : "LEBRON JAMES"
+        },
+        {
+                "category" : "Sports",
+                "word" : "SUPER BOWL"
+        },
+        {
+                "category" : "Sports",
+                "word" : "MARCH MADNESS"
+        },
+        {
+                "category" : "Geography",
+                "word" : "MOUNT RUSHMORE"
+        },
+        {
+                "category" : "Geography",
+                "word" : "EL SALVADOR"
+        },
+        {
+                "category" : "Geography",
+                "word" : "FINLAND"
+        },
+        {
+                "category" : "Geography",
+                "word" : "HIMALAYAS"
+        },
+        {
+                "category" : "History",
+                "word" : "ROSA PARKS"
+        },
+        {
+                "category" : "History",
+                "word" : "GEORGE WASHINGTON"
+        },
+        {
+                "category" : "History",
+                "word" : "MUSSOLINI"
+        },
+        {
+                "category" : "History",
+                "word" : "GEORGE BUSH"
+        },
+        {
+                "category" : "TV Shows",
+                "word" : "AMERICAN IDOL"
+        },
+        {
+                "category" : "Colleges",
+                "word" : "KENT STATE"
+        },
+        {
+                "category" : "Colleges",
+                "word" : "STANFORD"
+        },
+        {
+                "category" : "Colleges",
+                "word" : "GONZAGA"
+        },
+        {
+                "category" : "Colleges",
+                "word" : "AUBURN"
+        },
+        {
+                "category" : "Colleges",
+                "word" : "BAYLOR"
+        },
+        {
+                "category" : "Colleges",
+                "word" : "DAVIDSON"
+        }
+    ]
+}
